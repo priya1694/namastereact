@@ -1,0 +1,28 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "namaste-react created by priyasn",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priya1694/namastereact.git"
+  },
+  "author": "priya-sn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priya1694/namastereact/issues"
+  },
+  "homepage": "https://github.com/priya1694/namastereact#readme",
+  "devDependencies": {
+    "parcel": "^2.14.2"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}

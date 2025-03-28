@@ -1,0 +1,51 @@
+to configure local repository to remote follow the below steps:-
+* git init
+* git branch -M main
+* git add .
+* git commit -m "message"
+* if doing for first time (git remote add origin https://github.com/priya1694/namastereact.git )
+* git push origin main
+
+npm - does not have a full form (it manages a package)
+it is standard repository for packages.
+
+package.json is the configuartion for npm
+packages are also known as dependencies
+
+important package in our project : bundler
+bundler bundles or packages the project that will be able to push the project to production
+
+2 types of dependencies:-
+dev dependency - required in development phase
+normal dependency- used in production also.
+
+^ - updates the minor version updates
+~ - updates the major version updates
+
+package-lock.json - keeps track of exact version of the package
+
+node-modules - contains all the code fetched from npm.(data of the dependencies)
+
+transitive dependencies - dependencies involving other dependencies and so on..
+
+package,package-lock should be pushed to git but not node_modules.
+if package,package-lock then node modules can be re-generated 
+(npm install to re-generate node_modules)
+
+npx - execute a package (npx parcel index.html)
+
+#parcel
+* dev build
+* created local server
+* HMR - hot module replacement(refreshing on its own when saved)
+* File watching algorithms written in c++
+* caching - faster builds
+* Image optimization
+* minifaction/bundling of files
+* compressing
+* consistent hashing(read about it)
+* code splitting
+* differential bundling - support older browsers
+* diagonostic
+* better error handling
+* HTTPs
