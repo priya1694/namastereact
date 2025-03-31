@@ -49,3 +49,55 @@ npx - execute a package (npx parcel index.html)
 * diagonostic
 * better error handling
 * HTTPs
+
+To run the react project:-
+npm run start/npm start
+if you do not know how to run the project go to package.json and see the scripts for start & build
+
+To build the project:-
+npm run build
+
+React.createElement =>object =>render(HTMLElement)
+React.createElement is an react element which is inturn an object which on rendered to dom creates an htmlElement.
+
+JSX => It is a convention where we merge javascript and html together
+JSX is not html in JS 
+JSX is html like syntax/just looks like html/xml
+
+eg:- const JSXHeading = <h1 id="heading">hello priya</h1>;
+root.render(JSXHeading);
+
+babel -> takes jsx and converts it to the language understood by the js engine.
+the conversion happens before sending it to the browser
+
+attribute to jsx must be camelcase: eg:-className.tabIndex etc
+jsx code when written in multiple lines should be enclosed within the ()-brackets.
+
+React components:-
+* class based components - old way of writing component (javascript classes)
+* functional components - new way of writing component (javascript functions)
+
+React functional component is javascript function that returns JSX code/reactElement.
+
+component composition:- component inside another component.
+can inject any javascript inside the JSX Code using {}
+eg:- const number = 1000;
+{number} -> inside jsx code
+React Element can be included inside jsx code using {}
+component inside component using </>
+
+build food ordering app 
+name - namaste food
+header =>logo in the header , home,about,add to cart
+footer
+search and cards in the body
+
+arguments passed to a function is same as props passed in a functional component.
+
+Config driven UI 
+
+note:do not use index as key in react.(map function)
+if there is no unique id then use index but it is nor recommended in the first place.
+
+
+React Hooks:
