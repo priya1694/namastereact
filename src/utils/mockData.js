@@ -15,9 +15,9 @@ const resList =[{
         "Desserts",
         "Beverages"
       ],
-      "avgRating": 4.4,
+      "avgRating": 3.4,
       "parentId": "21809",
-      "avgRatingString": "4.4",
+      "avgRatingString": "3.4",
       "totalRatingsString": "9.8K+",
       "sla": {
         "deliveryTime": 26,

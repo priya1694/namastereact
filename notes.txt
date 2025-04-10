@@ -99,5 +99,55 @@ Config driven UI
 note:do not use index as key in react.(map function)
 if there is no unique id then use index but it is nor recommended in the first place.
 
+2 types of export :-
+default export
+named export
 
-React Hooks:
+when we have to export multiple things use named export.
+
+React Hooks:-
+Hook is a normal javascript utility function given by react.
+it is used to create super poerful variable known as state in react.
+1) useState()
+2) useEffect()
+
+whenever a state variable changes, react will re-render the component.
+
+ * useState is a state variable which is used to re-render the data into the ui , whenever the changes is made to the data.
+ * whenever local state variable is changed the component is re-rendered.
+ * Never create useState variable ouside the components, it is used to create local variable inside the functional components.
+ * always try to create state variable at the beginning of the function(higher level function).
+ * Never create useState inside an if else statement and for loops , it can create inconsistency in the program.
+ * useEffect uses 2 arguments once is the call back and another is the dependency array. eg:- useEffect({()=>},[]); 
+ * when the body function renders, it renders and then the call back function will be called and shows whatever is in useEffect.
+ * if no depemdency array , useEffect calls on every render.
+ * if there is dependency array and it is empty, use effect is called on the intial render(just once)
+ * if there is dependency array and it has some value , then whenever that value in a function is called the useEffect renders.
+
+
+
+React uses reconciliation algorithm known as react fibre.
+virtual DOM(javascript object) is representation of actual DOM
+
+
+Monolith & microservice architecture.
+Monolith arcitecture :- all code like api's , UI , DB, sms everything written at one place and compiled n deployed all of them whenever even a minute change is made in any of them.
+microservice :- different services for different of them like api,ui,db,auth etc and all of them communicating with eachother.
+* all indiviual services can run on their own porrts and can be connected through the domain name.
+
+2 ways the data can be fetched from the backend/database.
+1.as sson as page loads we can make a api call and then render data to the ui
+2.as soon as page loads we will render the ui and then make an api call and re-render the data.
+
+in react we will always use the 2nd approach.
+
+conditional rendering :- Rendering based on a condition.
+
+
+Routing inside react application.
+-> React router dom - it is an npm javascript library (to create routes)
+to install this package , go to terminal - npm i reat-router-dom
+-> create routing configuration inside the app.js
+-> UseRouteError is a hook given by react-router-dom
+
+Children routes
