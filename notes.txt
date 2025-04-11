@@ -149,5 +149,11 @@ Routing inside react application.
 to install this package , go to terminal - npm i reat-router-dom
 -> create routing configuration inside the app.js
 -> UseRouteError is a hook given by react-router-dom
+-> link component is a super power given to us by the react-router-dom
+-> anchor tag while linking reloads the whole page , while link dont 
 
 Children routes
+
+2 types of routing in webapps:-
+client side 
+server side
