@@ -157,3 +157,80 @@ Children routes
 2 types of routing in webapps:-
 client side 
 server side
+
+Class Based components :-
+* create state variable inside a constructor
+* class-based components uses constructors and this keyword.
+* eg:- this.state = {
+    count : 0,
+    count2: 2,
+}
+ {this.state.count} => calling
+ {this.state.count2}
+
+ * never update state variable directly.
+* to update the state variable 
+eg:- this.setState{
+    count : this.state.count + 1,
+    count2 : this.state.count2 + 1,
+}
+
+lifecycle of the class component 
+-> constructor
+->render
+->componentdidmount
+
+componentdidmount is used to make api calls (render once the component is mounted")
+
+React has 2 phases:-
+1)Render phase
+2)commit phase
+
+"render phase"
+first constructor is called 
+then render is called 
+
+"commit phase"
+then the dom is updated
+then the didmount is called.
+
+/* 
+------Mounting ------
+* constructor(dummy data)
+* render(dummy data)
+*componentdidmount(api call)
+* setState(api data)
+ ------Update-----
+ * render(api data)
+ * componentdidupdate
+*/
+
+44 minutes(chapter 8)
+
+Optimizing our app :-
+ * modularity :- break the code into different different modules.
+ * single responsibility principle -> each component has single responsibility , this makes the code reusable,maintainable and testable
+
+ optimization through custom Hooks
+ lazy loading :- craedting differents bundles of js for largescale applications to make the performance better , it can be done using lazy loading / called as on demand loading
+ In our example we have grocery component , only on click of it the code is retrieved and laoded. this helps in code optimization and better performance, it is also called as on demand loading,cod splitting,chunking,bundling etc.
+
+
+ css used in react :-
+ css
+ sass & scss
+ styled components
+ material-ui
+ bootstrap
+ ant design
+ tailwind css
+
+
+ Tailwind CSS :-
+
+
+ Higher Order Components:-
+ 
+
+
+
